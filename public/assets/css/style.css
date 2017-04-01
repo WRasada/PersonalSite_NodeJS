@@ -1,0 +1,259 @@
+/************************ DEFAULT STYLES ************************/
+body {
+  font-family: Lato;
+}
+
+html {
+  height: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+p {
+  text-indent: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  transition: 0.5s;
+}
+
+/************************ INDEX STYLES ************************/
+
+#homePage {
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  margin-bottom: 0;
+  color: white;
+}
+
+.navbar-header .navbar-brand{
+  font-family: Audiowide;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-family: Inconsolata;
+}
+
+.trademark {
+  position: relative;
+  bottom: 10px;
+  font-size: 10px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+}
+
+.blogBtn {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.blogBtn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  box-shadow: 0 0 6px white;
+}
+
+.blogBtn:focus, .blogBtn:active:focus {
+  background-color: rgba(22, 22, 22, 0.5);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px 2px white;
+}
+
+#messageSeparator {
+  width: 0;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+#landingMessage {
+  padding-top: 25%;
+}
+
+#myName, #myNameContent {
+  display: none;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6),
+               0px 8px 13px rgba(0, 0, 0, 0.2),
+               0px 18px 23px rgba(0, 0, 0, 0.2);
+}
+
+/************************ BLOG STYLES ************************/
+
+.blogPage .navbar-default {
+  background-color: rgba(0,0,0, 1);
+}
+
+.blogContainer {
+  display: none;
+  padding: 20px 34px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blogPosts, .blogInfo, .blogContainer p:nth-of-type(1), .mySkills, .aboutMe {
+  border-radius: 10px;
+  font-family: Inconsolata;
+  background: rgba(255, 255, 255, 0.57);
+  margin-top: 30px;
+  color: #4173ae;
+  padding: 15px;
+  height: 100%;
+  font-size: 16px;
+  border-left: 3px solid;
+}
+.blogPosts {
+  float: right;
+}
+
+.posts {
+  display: none;
+}
+
+.blogInfo {
+  margin: 30px 0;
+  position: relative;
+}
+
+#blogPage {
+  height: 100%;
+  background-color: black;
+  background: url('../images/cork-wallet.png');
+  background-repeat: repeat;
+}
+
+.postDate {
+  color: rgb(191, 231, 255);
+  margin: 5px 0;
+  display: inline;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.blogInfo .blogTitle {
+  padding-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.blogSeparator {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #292d31, #effdff, #292d31);
+}
+
+.blogInfo ul, .blogInfo ul a{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-family: Oswald;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.blogInfo ul a:hover {
+  color: rgb(134, 186, 255);
+}
+
+.icon {
+  color: rgb(191, 231, 255);
+  font-size: 15px;
+  float: right;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+
+/************************ ABOUT STYLES ************************/
+
+#aboutPage {
+  background: rgb(241, 241, 241);
+}
+
+.aboutHeader {
+  display: none;
+  background: -webkit-linear-gradient(rgba(28, 115, 215, 0.79), rgba(18, 81, 154, 0.79));
+  background: -o-linear-gradient(rgba(28, 115, 215, 0.79), rgba(18, 81, 154, 0.79));
+  background: linear-gradient(rgba(28, 115, 215, 0.79), rgba(18, 81, 154, 0.79));;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.aboutHeader img {
+  margin: 5px auto;
+  margin-bottom: 20px;
+  clip-path: circle(0px);
+  width: 160px;
+  transition: 1s;
+
+}
+
+.aboutHeader .clip {
+  clip-path: circle(100px);
+  transition: 1.2s;
+}
+
+
+.aboutSeparator {
+  margin: 4px auto;
+  width: 150px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.aboutHeader p {
+  text-indent: 0;
+  letter-spacing: 1px;
+  height: 20px;
+  font-family: 'Press Start 2P', cursive, serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.6);
+}
+
+.aboutContainer {
+  margin-top: 30px;
+  display: none;
+}
+
+.aboutTitle, .skillsTitle {
+  font-family: 'Fjalla One', cursive;
+  text-align: center;
+}
+
+.mySkills ul ul {
+  padding-left: 20px;
+  padding-bottom: 7px;
+}
