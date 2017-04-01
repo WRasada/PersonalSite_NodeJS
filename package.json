@@ -1,0 +1,19 @@
+{
+  "name": "PersonalSite_NodeJS",
+  "version": "1.0.0",
+  "description": "My Personal Site v2",
+  "main": "app.js",
+  "repository": "https://github.com/WRasada/PersonalSite_NodeJS.git",
+  "author": "Wesley <wesleyrasada@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "NODE_ENV=test nodemon"
+  }
+}
