@@ -1,21 +1,98 @@
 {{> header}}
   <body id="portfolioPage">
     {{> navbar}}
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div id="landingMessage">
-            <h1 id="myName">Wesley Rasada</h1>
-            <div id="myNameContent">
-              <hr id="messageSeparator">
-              <h2>Relaunch - 4/2/2017</h2>
-              <!-- <a class="blogBtn btn btn-primary" href="blogv2.html">View My Blog</a> -->
+  <div class="portfolioHeader">
+    <h2></h2>
+    <h3></h3>
+  </div>
+  <div class="container page1">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="projectContainer thumbnail">
+          <img src="/assets/images/patatap.png" alt="">
+          <div class="caption">
+            <h3>Patatap Clone</h3>
+            <p>
+              <li>Javascript</li>
+              <li>PaperJS</li>
+              <br>
+              This particular project was really fun to make. Its purely javascript using the PaperJS framework. It listens for keyboard presses on each letter of the alphabet. Each key has a unique sound and with each press a circle is randomly generated with animated colors. Make sure to turn your volume down if its up!
+            </p>
+            <div class="btn-group btn-group-justified projectButtons" role="group">
+              <a href="https://wrasada.github.io/Patatap_Clone/" class="btn btn-primary">Try it!</a>
+              <a href="https://github.com/WRasada/Patatap_Clone" class="btn btn-primary"><i class="fa fa-github"></i> View Repo</a>
             </div>
-
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="projectContainer thumbnail">
+          <img src="/assets/images/rgbgame.png" alt="">
+          <div class="caption">
+            <h3>RGB Color Guessing</h3>
+            <p>
+              <li>Javascript</li>
+              <br>
+              This was one of my first projects using just Javascript. It uses Javascript built in methods to randomly generate numbers between 0-256. From there, I was able to use those random numbers to generate a random color using the RGB color model. I added click event listeners to the buttons and squares. I finished it off by adding logic to check whether or not the clicked square is equal to RGB color generated.
+            </p>
+            <div class="btn-group btn-group-justified projectButtons" role="group">
+              <a href="https://wrasada.github.io/RGB_Game/" class="btn btn-primary">Try it!</a>
+              <a href="https://github.com/WRasada/RGB_Game" class="btn btn-primary"><i class="fa fa-github"></i> View Repo</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container page2">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="projectContainer thumbnail">
+          <img src="/assets/images/yelpcamp.png" alt="">
+          <div class="caption">
+            <h3>Yelp Camp</h3>
+            <p>
+              <li>ExpressJS</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>Various NPM packages</li>
+              <br>
+              This was one of my first big projects. Using mostly the MEAN stack except for Angular. Used a NoSQL database (MongoDB) and queried it using the NPM package 'mongoose'. Complete with user, campground, and comment database collections. ObjectID reference to store comments and campgrounds unique to each user instance. Complete user authorization and authentication with middleware security.
+            </p>
+            <div class="btn-group btn-group-justified projectButtons" role="group">
+              <a href="https://hidden-earth-87635.herokuapp.com/" class="btn btn-primary">Try it!</a>
+              <a href="https://github.com/WRasada/YelpCamp" class="btn btn-primary"><i class="fa fa-github"></i> View Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="projectContainer thumbnail">
+          <img src="/assets/images/devmatch.png" alt="">
+          <div class="caption">
+            <h3>DevMatch</h3>
+            <p>
+              <li>Ruby</li>
+              <li>Rails</li>
+              <br>
+              This was the very first project in my venture into programming. Much like YelpCamp it's complete with user signups but also with subscription plans. Added security by whitelisting form fields. User profile pages with extra features added for "Pro Users". It's been a while since I touched Ruby as I've mostly been focusing on Javascript and the MEAN stack.
+            </p>
+            <div class="btn-group btn-group-justified projectButtons" role="group">
+              <a href="https://calm-badlands-25451.herokuapp.com/" class="btn btn-primary">Try it!</a>
+              <a href="https://github.com/WRasada/upskill_saas_tutorial" class="btn btn-primary"><i class="fa fa-github"></i> View Repo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="pageCenter" aria-label="Page navigation">
+  <ul class="pagination">
+    <li><a class="pageOne">1</a></li>
+    <li><a class="pageTwo">2</a></li>
+  </ul>
+</nav>
+  {{> footer}}
   <script type="text/javascript" src="assets/js/personalSite.js"></script>
   <script type="text/javascript" src="assets/js/lib/bootstrap.min.js"></script>
   </body>
