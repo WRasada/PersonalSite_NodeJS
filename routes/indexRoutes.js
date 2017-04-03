@@ -2,7 +2,7 @@ const express = require('express'),
       router  = express.Router(),
       nodemailer = require('nodemailer');
 
-const { props }  = require('../config/email');
+// const { props }  = require('../config/email');
 
 router.get('/', (req, res) => {
   res.render('home', { title: 'Wesley Rasada' });
