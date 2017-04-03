@@ -26,6 +26,26 @@ if (path === '/contact') {
 setTimeout(() => {
   $('footer').fadeIn(800);
 }, 3000);
+
+setTimeout(() => {
+  $('#myNameContent').fadeIn(1000, () => {
+    $('#myNameContent').addClass('clip');
+    setTimeout(() => {
+      $('#myNameContent a').css({ visibility: 'visible'}).addClass('animated zoomInDown');
+      setTimeout(() => {
+        $('#myNameContent a').removeClass('zoomInDown').addClass('animated infinite bounce');
+      }, 1000);
+    }, 1400);
+  });
+}, 700)
+
+$('#myNameContent a').on('click', function() {
+  $(this).removeClass('infinite bounce').addClass('hinge');
+  setTimeout(() => {
+    window.location.href = "http://localhost:3000/about";
+  }, 2200);
+})
+
 $('.navbar-nav li').mouseenter(function(){
 	if($(this).hasClass('active')){
   } else {
@@ -99,7 +119,7 @@ setTimeout(() => {
 setTimeout(() => {
   $('.portfolioHeader').slideDown(1100, () => {
     $(".portfolioHeader h2").typed({
-      strings: ["Projects"],
+      strings: ["PROJECTS"],
       typeSpeed: 70,
       showCursor: false
     });
@@ -111,11 +131,15 @@ setTimeout(() => {
 }, 1300);
 
 $('.pageOne').on('click', () => {
+  $('.pageTwo').removeClass('active');
+  $('.pageOne').addClass('active');
   $('.page2').hide();
   $('.page1').show();
 });
 
 $('.pageTwo').on('click', () => {
+  $('.pageOne').removeClass('active');
+  $('.pageTwo').addClass('active');
   $('.page1').hide();
   $('.page2').show();
 });
