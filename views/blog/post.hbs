@@ -1,0 +1,25 @@
+{{> header}}
+  <body>
+    {{> navbar}}
+    <div class="container">
+      <div class="row">
+        <div class="blogContainer col-xs-12 col-md-10 col-md-offset-1">
+          <div class="blogHeader">
+            <h2 class="blogTitle">{{blog.title}}</h2>
+            <hr class="titleSeparator">
+            <h4 class="blogInfo">{{dateFormat blog.date}}</h4>
+          </div>
+          <div class="blogPost">
+            {{{blog.body}}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="postFooter">
+      <a class="btn btn-default" href="/blog">Go Back</a>
+    </div>
+</script>
+  <script type="text/javascript" src="/assets/js/personalSite.js"></script>
+  <script type="text/javascript" src="/assets/js/lib/bootstrap.min.js"></script>
+  </body>
+</html>

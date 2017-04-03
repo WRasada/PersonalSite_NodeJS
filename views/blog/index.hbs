@@ -11,7 +11,8 @@
             <h4 class="blogInfo">{{dateFormat date}}</h4>
           </div>
           <div class="blogPost">
-            <p>{{body}}</p>
+            <p>{{{sliceBlog body}}}</p>
+            <a id="readMoreButton" href="/blog/{{_id}}">Read more</a>
           </div>
         </div>
       </div>

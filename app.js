@@ -12,13 +12,17 @@ const blogRoutes       = require('./routes/blogRoutes');
 
 const port = process.env.PORT;
 
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.set('view engine', 'hbs');
-app.use(express.static(__dirname + '/public'));
 
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerHelper('dateFormat', (date) => dateFormat(date, "dddd, mmmm dS, yyyy, h:MM:ss TT").toUpperCase());
+hbs.registerHelper('sliceBlog', (string) => {
+  let firstParagraph = string.indexOf('</p>');
+  return string.slice(0, firstParagraph) + "..";
+})
 
 app.use('/', indexRoutes);
 app.use('/blog', blogRoutes);

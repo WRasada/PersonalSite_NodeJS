@@ -9,11 +9,20 @@ router.get('/', (req, res) => {
     title: 'Hello',
     body: 'test1',
   });
-  
-  post.save();
 
   Blog.find().then((blogs) => {
-    res.render('blog', { title: 'My Blog', blogs})
+    blogs = blogs.reverse();
+    res.render('blog/index', { title: 'My Blog', blogs})
+  }, (e) => {
+    res.status(400).send(e);
+  });
+});
+
+router.get('/:id', (req, res) => {
+  let id = req.params.id;
+
+  Blog.findById(id).then((blog) => {
+    res.render('blog/post', { blog });
   }, (e) => {
     res.status(400).send(e);
   });
