@@ -44,7 +44,7 @@ setTimeout(() => {
 $('#myNameContent a').on('click', function() {
   $(this).removeClass('infinite bounce').addClass('hinge');
   setTimeout(() => {
-    window.location.href = "http://localhost:3000/about";
+    window.location.href = "https://blooming-forest-18718.herokuapp.com/about";
   }, 2200);
 })
 
