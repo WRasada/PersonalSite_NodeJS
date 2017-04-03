@@ -1,6 +1,10 @@
           //************* GLOBAL JS *************//
 let path = window.location.pathname;
 
+$('.navbar-default').fadeIn(1200, function(){
+  $('.blogContainer').fadeIn(1000);
+});
+
 $('.navbar-nav li').mouseenter(function(){
 	if($(this).hasClass('active')){
   } else {
@@ -77,15 +81,15 @@ if (path === '/about') {
 
       $('.aboutContainer').fadeIn(800, () => {
         setTimeout(() => {
-          $('#progressBarJS').css({ width: '49%' });
-          $('#progressBarjQuery').css({ width: '30%' });
-          $('#progressBarNode').css({ width: '39%' });
-          $('#progressBarMongo').css({ width: '36%' });
-          $('#progressBarExpress').css({ width: '42%' });
-          $('#progressBarHTML').css({ width: '40%' });
-          $('#progressBarCSS').css({ width: '40%' });
-          $('#progressBarRuby').css({ width: '22%' });
-          $('#progressBarRails').css({ width: '19%' });
+          $('#progressBarJS').css({ width: '42%' });
+          $('#progressBarjQuery').css({ width: '23%' });
+          $('#progressBarNode').css({ width: '32%' });
+          $('#progressBarMongo').css({ width: '29%' });
+          $('#progressBarExpress').css({ width: '35%' });
+          $('#progressBarHTML').css({ width: '33%' });
+          $('#progressBarCSS').css({ width: '33%' });
+          $('#progressBarRuby').css({ width: '16%' });
+          $('#progressBarRails').css({ width: '13%' });
         }, 1000);
       });
     });

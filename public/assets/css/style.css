@@ -141,7 +141,7 @@ p {
 #myNameContent.clip {
   color: white;
   transition: 3s;
-  clip-path: circle(1000px);
+  clip-path: circle(1600px);
 }
 
 /************************ FOOTER ************************/
