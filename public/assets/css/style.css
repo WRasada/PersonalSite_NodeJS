@@ -37,10 +37,6 @@ p {
 
 #homePage {
   background: #70bbea;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
   color: white;
 }
 
@@ -113,23 +109,21 @@ p {
   display: none;
   text-shadow: 0 0px 8px #29a789;
   color: #70bbea;
-  height: 100%;
   width: 100%;
-  background-color: rgb(26, 218, 172);
+  padding: 20vh 0;
+  margin: auto;
+  background: rgb(97, 206, 128);
   clip-path: circle(0);
   font-family: 'Fjalla One';
   text-align: center;
 }
 
-.mainPage a {
+#myNameContent a {
   text-shadow: none;
   visibility: hidden;
   margin-top: 20px;
   width: 170px;
   color: rgb(26, 218, 172);
-}
-.mainPage {
-  margin-top: 40vh;
 }
 
 .homeButton {

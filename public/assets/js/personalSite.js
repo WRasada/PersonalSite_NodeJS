@@ -32,6 +32,9 @@ setTimeout(() => {
 setTimeout(() => {
   $('#myNameContent').fadeIn(1000, () => {
     $('#myNameContent').addClass('clip');
+    // setTimeout(() => {
+    //   $('#homePage').css({ background: 'rgb(26, 218, 172)' });
+    // }, 2000);
     setTimeout(() => {
       $('#myNameContent a').css({ visibility: 'visible'}).addClass('animated zoomInDown');
       setTimeout(() => {
@@ -44,7 +47,7 @@ setTimeout(() => {
 $('#myNameContent a').on('click', function() {
   $(this).removeClass('infinite bounce').addClass('hinge');
   setTimeout(() => {
-    window.location.href = "https://blooming-forest-18718.herokuapp.com/about";
+    window.location.href += 'about';
   }, 2200);
 })
 
