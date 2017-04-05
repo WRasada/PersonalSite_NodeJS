@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   let id = req.params.id;
 
-  Blog.findOne({ _id: id }).then((blog) => {
+  Blog.findOne({ _id.$oid: id }).then((blog) => {
     res.render('blog/post', { blog });
   }, (e) => {
     res.status(400).send(e);
