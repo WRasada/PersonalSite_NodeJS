@@ -17,7 +17,7 @@ router.get('/contact', (req, res) => {
 });
 
 router.get('/portfolio', (req, res) => {
-  res.render('portfolio', { title: 'Contact Me'});
+  res.render('portfolio', { title: 'Portfolio'});
 });
 
 // router.post('/contact', (req, res) => {
