@@ -106,9 +106,9 @@ if (path === '/portfolio') {
   $('.navbar-default').css({ backgroundColor: "rgb(138, 38, 55)" })
   $('footer').css({ backgroundColor: "rgb(138, 38, 55)" })
   $('.portfolioHeader').css({
-    background: "-webkit-linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47)",
-    background: "-o-linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47)",
-    background: "linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47)"
+    background: "-webkit-linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47))",
+    background: "-o-linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47))",
+    background: "linear-gradient(rgb(195, 32, 60), rgb(156, 24, 47))"
   });
   $('.navbar-default').fadeIn(1200, function(){
     $('.portfolioHeader').slideDown(1100, () => {
@@ -145,9 +145,9 @@ if (path === '/contact') {
   $('footer').css({ backgroundColor: "rgb(19, 201, 125)" });
 
   $('.contactHeader').css({
-    background: "-webkit-linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125)",
-    background: "-o-linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125)",
-    background: "linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125)"
+    background: "-webkit-linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125))",
+    background: "-o-linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125))",
+    background: "linear-gradient(rgb(13, 224, 136), rgb(19, 201, 125))"
   });
 
   $('.navbar-default').fadeIn(1200, function(){
