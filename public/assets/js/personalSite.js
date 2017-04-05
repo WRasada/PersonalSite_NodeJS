@@ -1,10 +1,6 @@
           //************* GLOBAL JS *************//
 let path = window.location.pathname;
 
-$('.navbar-default').fadeIn(1200, function(){
-  $('.blogContainer').fadeIn(1000);
-});
-
 $('.navbar-nav li').mouseenter(function(){
 	if($(this).hasClass('active')){
   } else {
@@ -51,6 +47,12 @@ $('#myNameContent a').on('click', function() {
   }, 2200);
 })
 
+// ************* POST JS ***************//
+
+$('.navbar-default').fadeIn(1200, function(){
+  $('.blogContainer').fadeIn(1000);
+  $('.postFooter').fadeIn(1000);
+});
 
 //************* BLOG JS *************//
 
