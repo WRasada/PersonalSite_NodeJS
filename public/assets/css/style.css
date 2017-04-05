@@ -113,7 +113,8 @@ p {
   padding: 20vh 0;
   margin: auto;
   background: rgb(97, 206, 128);
-  clip-path: circle(0);
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
   font-family: 'Fjalla One';
   text-align: center;
 }
@@ -135,7 +136,8 @@ p {
 #myNameContent.clip {
   color: white;
   transition: 3s;
-  clip-path: circle(1600px);
+  -webkit-clip-path: circle(1600px);
+          clip-path: circle(1600px);
 }
 
 /************************ FOOTER ************************/
@@ -303,7 +305,8 @@ footer p {
   border: 5px solid white;
   margin: 5px auto;
   margin-bottom: 20px;
-  clip-path: circle(0px);
+  -webkit-clip-path: circle(0);
+          clip-path: circle(0);
   width: 160px;
   transition: 1s;
 
@@ -319,7 +322,8 @@ footer p {
 }
 
 .aboutHeader .clip {
-  clip-path: circle(100px);
+  -webkit-clip-path: circle(100px);
+          clip-path: circle(100px);
   transition: 1.2s;
 }
 
