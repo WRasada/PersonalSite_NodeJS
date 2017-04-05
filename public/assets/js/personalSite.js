@@ -152,6 +152,7 @@ if (path === '/contact') {
 
   $('.navbar-default').fadeIn(1200, function(){
     $('.contactHeader').slideDown(1100, () => {
+      $('.contactHeader').show();
       $(".contactHeader h2").typed({
         strings: ["Contact Me"],
         typeSpeed: 70,
