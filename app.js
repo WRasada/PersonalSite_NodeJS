@@ -22,7 +22,8 @@ hbs.registerHelper('dateFormat', (date) => dateFormat(date, "dddd, mmmm dS, yyyy
 hbs.registerHelper('sliceBlog', (string) => {
   let firstParagraph = string.indexOf('</p>');
   return string.slice(0, firstParagraph) + "..";
-})
+});
+// hbs.registerHelper('blogFormat', (text) => text.replace(/\r?\n/g, '<br />'));
 
 app.use('/', indexRoutes);
 app.use('/blog', blogRoutes);
