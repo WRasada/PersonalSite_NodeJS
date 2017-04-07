@@ -2,8 +2,6 @@ const mongoose = require('mongoose');
 const dateFormat = require('dateformat');
 const Schema = mongoose.Schema;
 
-let date = new Date();
-
 const BlogSchema = new Schema({
   title: String,
   date: {
