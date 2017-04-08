@@ -2,14 +2,14 @@
   <body id="blogPage">
     {{> navbar}}
     <div id="blogForm" class="container">
-      <form action="/blog/new" method="POST">
+      <form action="/blog/{{blog._id}}?_method=PATCH" method="POST">
         <div class="form-group">
           <label for="title">Title:</label>
-          <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+          <input type="text" class="form-control" id="title" placeholder="Title" name="blogPost[title]" value="{{blog.title}}">
         </div>
         <div class="form-group">
           <label for="message">Body:</label>
-          <textarea name="body" class="form-control" rows="3" placeholder="Type away"></textarea>
+          <textarea name="blogPost[body]" class="form-control" rows="3" placeholder="Type away">{{blog.body}}</textarea>
         </div>
         <button type="submit" class="btn btn-default">Send</button>
           <input type="text" class="secret" id="secret" placeholder="Secret Code" name="secret">
