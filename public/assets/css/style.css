@@ -449,6 +449,13 @@ footer p {
 
 /************************ CONTACT STYLES ************************/
 
+.successMessage {
+  text-indent: 13px;
+  display: block;
+  padding: 5px 0;
+  color: rgb(77, 142, 71);
+}
+
 .contactForm {
   display: none;
   min-width: 250px;
@@ -474,4 +481,11 @@ footer p {
 .help-block {
   display: inline;
   margin-left: 20px;
+}
+
+.contactWarning {
+  color: #585858;
+  font-size: 14px;
+  padding: 10px 0;
+  text-indent: 13px;
 }

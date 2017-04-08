@@ -4,6 +4,7 @@ const express          = require('express'),
       { mongoose }     = require('./config/mongoose'),
       methodOverride   = require('method-override'),
       bodyParser       = require('body-parser'),
+      expressValidator = require('express-validator'),
       dateFormat       = require('dateformat'),
       hbs              = require('hbs'),
       app              = express();
@@ -16,6 +17,7 @@ const port = process.env.PORT;
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(expressValidator());
 app.use(methodOverride('_method'));
 app.set('view engine', 'hbs');
 
