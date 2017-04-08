@@ -163,7 +163,11 @@ if (path === '/contact') {
       $('.contactForm').fadeIn(1100);
     });
   });
-﻿
+
+	setTimeout(() => {
+		$('.contactWarning').slideUp("slow");
+	}, 6000);
+
 	$('#contactMailer').on('submit', () => {
 	    $('#contactButton').attr('disabled', 'disabled');
 	});
