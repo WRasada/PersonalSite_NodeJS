@@ -2,15 +2,14 @@ This site will be utilizing the MEAN stack; however, to start it will not have a
 
 Current list of packages:
 
- - body-parser
- - connect-flash
- - ejs
  - express
- - express-session
+ - body-parser
+ - hbs
  - method-override
  - mongoose
- - passport
- - passport-local
- - passport-local-mongoose
+ - nodemailer
+ - express-validator
+ - dateformat
+
 
 will update as I add more.
