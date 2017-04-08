@@ -164,7 +164,7 @@ if (path === '/contact') {
     });
   });
 ﻿
-	$('#contactButton').on('submit', () => {
+	$('#contactMailer').on('submit', () => {
 	    $('#contactButton').attr('disabled', 'disabled');
 	});
 }

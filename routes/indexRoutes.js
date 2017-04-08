@@ -33,7 +33,6 @@ router.post('/contact', validator.contactValidator, (req, res) => {
 
   transporter.sendMail(mailForm, function(error, info){
     if(error){
-        alert('Message Failed');
         res.json({error: 'error'});
     } else {
         res.render('contact', {message: 'Message sent!', class: 'alert alert-success successMessage'});
