@@ -163,4 +163,8 @@ if (path === '/contact') {
       $('.contactForm').fadeIn(1100);
     });
   });
+﻿
+	$('#contactButton').on('submit', () => {
+	    $('#contactButton').attr('disabled', 'disabled');
+	});
 }

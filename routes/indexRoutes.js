@@ -24,10 +24,9 @@ router.get('/portfolio', (req, res) => {
 router.post('/contact', validator.contactValidator, (req, res) => {
 
   let mailForm = {
-    from: req.body.email, // sender address
     to: 'wesleyrasada@gmail.com', // list of receivers
-    subject: req.body.title, // Subject line
-    text: req.body.text, // plain text body
+    subject: `${req.body.email} - ${req.body.title}`, // Subject line
+    html: `<p>${req.body.text}</p>`
   };
 
   let transporter = nodemailer.createTransport(props);
@@ -37,7 +36,6 @@ router.post('/contact', validator.contactValidator, (req, res) => {
         alert('Message Failed');
         res.json({error: 'error'});
     } else {
-        console.log(mailForm.from);
         res.render('contact', {message: 'Message sent!', class: 'alert alert-success successMessage'});
     };
   });
