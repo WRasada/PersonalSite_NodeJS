@@ -166,7 +166,7 @@ if (path === '/contact') {
 
 	setTimeout(() => {
 		$('.contactWarning').slideUp("slow");
-	}, 6000);
+	}, 7000);
 
 	$('#contactMailer').on('submit', () => {
 	    $('#contactButton').attr('disabled', 'disabled');
