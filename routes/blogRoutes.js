@@ -29,6 +29,7 @@ router.get('/new', (req, res) => {
   res.render('blog/new');
 });
 
+// Show all blogs
 router.get('/', (req, res) => {
 
   Blog.find().then((blogs) => {

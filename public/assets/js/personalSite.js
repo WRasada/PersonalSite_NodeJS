@@ -68,7 +68,7 @@ if (path === '/blog') {
 
 //************* ABOUT JS *************//
 
-if (path === '/about' || '/') {
+if (path === '/about' || path === '/') {
 
   $('.navbar-default').css({ backgroundColor: "rgba(47, 93, 146, 1)" });
   $('footer').css({ backgroundColor: "rgba(47, 93, 146, 1)" });
