@@ -25,27 +25,27 @@ setTimeout(() => {
   $('footer').fadeIn(800);
 }, 2500);
 
-setTimeout(() => {
-  $('#myNameContent').fadeIn(1000, () => {
-    $('#myNameContent').addClass('clip');
-    // setTimeout(() => {
-    //   $('#homePage').css({ background: 'rgb(26, 218, 172)' });
-    // }, 2000);
-    setTimeout(() => {
-      $('#myNameContent a').css({ visibility: 'visible'}).addClass('animated zoomInDown');
-      setTimeout(() => {
-        $('#myNameContent a').removeClass('zoomInDown').addClass('animated infinite bounce');
-      }, 1000);
-    }, 1400);
-  });
-}, 300)
-
-$('#myNameContent a').on('click', function() {
-  $(this).removeClass('infinite bounce').addClass('hinge');
-  setTimeout(() => {
-    window.location.href += 'about';
-  }, 2200);
-})
+// setTimeout(() => {
+//   $('#myNameContent').fadeIn(1000, () => {
+//     $('#myNameContent').addClass('clip');
+//     // setTimeout(() => {
+//     //   $('#homePage').css({ background: 'rgb(26, 218, 172)' });
+//     // }, 2000);
+//     setTimeout(() => {
+//       $('#myNameContent a').css({ visibility: 'visible'}).addClass('animated zoomInDown');
+//       setTimeout(() => {
+//         $('#myNameContent a').removeClass('zoomInDown').addClass('animated infinite bounce');
+//       }, 1000);
+//     }, 1400);
+//   });
+// }, 300)
+//
+// $('#myNameContent a').on('click', function() {
+//   $(this).removeClass('infinite bounce').addClass('hinge');
+//   setTimeout(() => {
+//     window.location.href += 'about';
+//   }, 2200);
+// })
 
 // ************* POST JS ***************//
 
@@ -68,7 +68,7 @@ if (path === '/blog') {
 
 //************* ABOUT JS *************//
 
-if (path === '/about') {
+if (path === '/about' || '/') {
 
   $('.navbar-default').css({ backgroundColor: "rgba(47, 93, 146, 1)" });
   $('footer').css({ backgroundColor: "rgba(47, 93, 146, 1)" });
@@ -78,8 +78,8 @@ if (path === '/about') {
       $('.aboutHeader img').addClass('clip');
       setTimeout(() => {
         $(".aboutHeader p").typed({
-          strings: ["Full-Stack Developer"],
-          typeSpeed: 70,
+          strings: ["Wesley Rasada <br>Full-Stack Developer"],
+          typeSpeed: 40,
           showCursor: false
         });
       }, 1700);

@@ -6,7 +6,7 @@ const validator = require('../middleware/validate');
 const { props }  = require('../config/email');
 
 router.get('/', (req, res) => {
-  res.render('home', { title: 'Wesley Rasada' });
+  res.render('about', { title: 'Wesley Rasada' });
 });
 
 router.get('/about', (req, res) => {
