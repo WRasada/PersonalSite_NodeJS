@@ -91,8 +91,8 @@ if (path === '/about' || path === '/') {
           $('#progressBarNode').css({ width: '32%' });
           $('#progressBarMongo').css({ width: '29%' });
           $('#progressBarExpress').css({ width: '35%' });
-          $('#progressBarHTML').css({ width: '33%' });
-          $('#progressBarCSS').css({ width: '33%' });
+          $('#progressBarHTML').css({ width: '42%' });
+          $('#progressBarCSS').css({ width: '42%' });
           $('#progressBarRuby').css({ width: '16%' });
           $('#progressBarRails').css({ width: '13%' });
         }, 1000);
