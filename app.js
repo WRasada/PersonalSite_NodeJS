@@ -22,7 +22,7 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'hbs');
 
 hbs.registerPartials(__dirname + '/views/partials');
-hbs.registerHelper('dateFormat', (date) => dateFormat("fullDate").toUpperCase());
+hbs.registerHelper('dateFormat', (date) => dateFormat(date, "fullDate").toUpperCase());
 hbs.registerHelper('sliceBlog', (string) => {
   let firstParagraph = string.indexOf('</p>');
   return string.slice(0, firstParagraph) + "..";
